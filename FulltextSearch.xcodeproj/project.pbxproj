@@ -21,6 +21,17 @@
 		464A3F3A18ED62E200707F0A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 464A3F1C18ED62E200707F0A /* UIKit.framework */; };
 		464A3F4218ED62E200707F0A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 464A3F4018ED62E200707F0A /* InfoPlist.strings */; };
 		464A3F4418ED62E200707F0A /* FulltextSearchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 464A3F4318ED62E200707F0A /* FulltextSearchTests.m */; };
+		464A3F4E18ED62FC00707F0A /* JsonCatalog in Resources */ = {isa = PBXBuildFile; fileRef = 464A3F4D18ED62FC00707F0A /* JsonCatalog */; };
+		464A3F5D18F24D2200707F0A /* JsonCall in Resources */ = {isa = PBXBuildFile; fileRef = 464A3F4F18F24D2200707F0A /* JsonCall */; };
+		464A3F5E18F24D2200707F0A /* JsonContact in Resources */ = {isa = PBXBuildFile; fileRef = 464A3F5018F24D2200707F0A /* JsonContact */; };
+		464A3F5F18F24D2200707F0A /* JsonCoupon in Resources */ = {isa = PBXBuildFile; fileRef = 464A3F5118F24D2200707F0A /* JsonCoupon */; };
+		464A3F6018F24D2200707F0A /* JsonFavorite in Resources */ = {isa = PBXBuildFile; fileRef = 464A3F5218F24D2200707F0A /* JsonFavorite */; };
+		464A3F6118F24D2200707F0A /* JsonIntro in Resources */ = {isa = PBXBuildFile; fileRef = 464A3F5318F24D2200707F0A /* JsonIntro */; };
+		464A3F6218F24D2200707F0A /* JsonNews in Resources */ = {isa = PBXBuildFile; fileRef = 464A3F5418F24D2200707F0A /* JsonNews */; };
+		464A3F6418F24D2200707F0A /* JsonProfile in Resources */ = {isa = PBXBuildFile; fileRef = 464A3F5618F24D2200707F0A /* JsonProfile */; };
+		464A3F6518F24D2200707F0A /* JsonProfilePhoto in Resources */ = {isa = PBXBuildFile; fileRef = 464A3F5718F24D2200707F0A /* JsonProfilePhoto */; };
+		464A3F6918F24D2200707F0A /* JsonSpecial in Resources */ = {isa = PBXBuildFile; fileRef = 464A3F5B18F24D2200707F0A /* JsonSpecial */; };
+		464A3F6A18F24D2200707F0A /* JsonVideo in Resources */ = {isa = PBXBuildFile; fileRef = 464A3F5C18F24D2200707F0A /* JsonVideo */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +64,17 @@
 		464A3F3F18ED62E200707F0A /* FulltextSearchTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FulltextSearchTests-Info.plist"; sourceTree = "<group>"; };
 		464A3F4118ED62E200707F0A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		464A3F4318ED62E200707F0A /* FulltextSearchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FulltextSearchTests.m; sourceTree = "<group>"; };
+		464A3F4D18ED62FC00707F0A /* JsonCatalog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JsonCatalog; sourceTree = "<group>"; };
+		464A3F4F18F24D2200707F0A /* JsonCall */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JsonCall; sourceTree = "<group>"; };
+		464A3F5018F24D2200707F0A /* JsonContact */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JsonContact; sourceTree = "<group>"; };
+		464A3F5118F24D2200707F0A /* JsonCoupon */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JsonCoupon; sourceTree = "<group>"; };
+		464A3F5218F24D2200707F0A /* JsonFavorite */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JsonFavorite; sourceTree = "<group>"; };
+		464A3F5318F24D2200707F0A /* JsonIntro */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JsonIntro; sourceTree = "<group>"; };
+		464A3F5418F24D2200707F0A /* JsonNews */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JsonNews; sourceTree = "<group>"; };
+		464A3F5618F24D2200707F0A /* JsonProfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JsonProfile; sourceTree = "<group>"; };
+		464A3F5718F24D2200707F0A /* JsonProfilePhoto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JsonProfilePhoto; sourceTree = "<group>"; };
+		464A3F5B18F24D2200707F0A /* JsonSpecial */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JsonSpecial; sourceTree = "<group>"; };
+		464A3F5C18F24D2200707F0A /* JsonVideo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JsonVideo; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +139,17 @@
 				464A3F2A18ED62E200707F0A /* Main.storyboard */,
 				464A3F2D18ED62E200707F0A /* ViewController.h */,
 				464A3F2E18ED62E200707F0A /* ViewController.m */,
+				464A3F4D18ED62FC00707F0A /* JsonCatalog */,
+				464A3F4F18F24D2200707F0A /* JsonCall */,
+				464A3F5018F24D2200707F0A /* JsonContact */,
+				464A3F5118F24D2200707F0A /* JsonCoupon */,
+				464A3F5218F24D2200707F0A /* JsonFavorite */,
+				464A3F5318F24D2200707F0A /* JsonIntro */,
+				464A3F5418F24D2200707F0A /* JsonNews */,
+				464A3F5618F24D2200707F0A /* JsonProfile */,
+				464A3F5718F24D2200707F0A /* JsonProfilePhoto */,
+				464A3F5B18F24D2200707F0A /* JsonSpecial */,
+				464A3F5C18F24D2200707F0A /* JsonVideo */,
 				464A3F3018ED62E200707F0A /* Images.xcassets */,
 				464A3F1F18ED62E200707F0A /* Supporting Files */,
 			);
@@ -228,8 +261,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				464A3F5D18F24D2200707F0A /* JsonCall in Resources */,
+				464A3F6218F24D2200707F0A /* JsonNews in Resources */,
+				464A3F6918F24D2200707F0A /* JsonSpecial in Resources */,
+				464A3F6A18F24D2200707F0A /* JsonVideo in Resources */,
+				464A3F5F18F24D2200707F0A /* JsonCoupon in Resources */,
+				464A3F5E18F24D2200707F0A /* JsonContact in Resources */,
+				464A3F4E18ED62FC00707F0A /* JsonCatalog in Resources */,
+				464A3F6118F24D2200707F0A /* JsonIntro in Resources */,
+				464A3F6418F24D2200707F0A /* JsonProfile in Resources */,
 				464A3F3118ED62E200707F0A /* Images.xcassets in Resources */,
 				464A3F2318ED62E200707F0A /* InfoPlist.strings in Resources */,
+				464A3F6018F24D2200707F0A /* JsonFavorite in Resources */,
+				464A3F6518F24D2200707F0A /* JsonProfilePhoto in Resources */,
 				464A3F2C18ED62E200707F0A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

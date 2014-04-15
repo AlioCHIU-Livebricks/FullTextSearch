@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate>
+{
+    NSArray *targetFunctionArry;
+    NSMutableArray *searchResultArray;
+}
+
+@property IBOutlet UITableView *listTable;
+@property IBOutlet UITextField *keyword;
+
+- (IBAction)search:(id)sender;
 
 @end
