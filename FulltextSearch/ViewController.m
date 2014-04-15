@@ -59,9 +59,14 @@
             //NSLog(@"sTemp = %@, searchText = %@",sTemp,searchText);
             
             if (titleResultsRange.length > 0){
+                
+                NSRange substringRange = NSMakeRange(titleResultsRange.location - 10, 20);
 //                NSLog(@"%@",item[@"menu1"]);
 //                NSLog(@"module %@ found %@",moduleName,item);
-                NSLog(@"module %@ ",moduleName);
+//                NSLog(@"module %@ ",moduleName);
+                NSString *string = [contentString substringWithRange:substringRange];
+                NSLog(@"found %@",string);
+                
                 [result addObject:item];
                 count++;
             }
@@ -83,7 +88,10 @@
     return [searchResultArray count];
 }
 - (NSString*)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
-    return [NSString stringWithFormat:@"%@ : %@",searchResultArray[section][@"type"],searchResultArray[section][@"count"]];
+    if ([searchResultArray[section][@"count"]integerValue]>0) {
+        return [NSString stringWithFormat:@"%@ : %@",searchResultArray[section][@"type"],searchResultArray[section][@"count"]];
+    }
+    return nil;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return [searchResultArray[section][@"count"] integerValue];
@@ -97,25 +105,36 @@
     }
     NSDictionary *result = searchResultArray[indexPath.section][@"detail"][indexPath.row];
     
-    NSString *title;
-    if ([searchResultArray[indexPath.section][@"type"] isEqualToString:@"Catalog"]) {
-        cell.textLabel.text = [result[@"menu1"] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
-    }
-    if ([searchResultArray[indexPath.section][@"type"] isEqualToString:@"Special"]) {
-        title = [NSString stringWithFormat:@"%@",result[@"description"]];
-    }
-//    cell.textLabel.text = [NSString stringWithFormat:@"%@",[self getDesc:result]];
+//    NSString *contentString = [[result allValues] componentsJoinedByString:@","];
+//    NSRange titleResultsRange = [contentString rangeOfString:self.keyword.text options:NSCaseInsensitiveSearch];
+//    NSRange substringRange = NSMakeRange(titleResultsRange.location - 10, 20);
+//    NSString *string = [contentString substringWithRange:substringRange];
+//    cell.textLabel.text = string;
+    cell.textLabel.text = [self getTitle:result :indexPath];
     return cell;
 }
-- (NSString*)getDesc:(NSDictionary*)result{
-    NSString *title;
-    if ([result[@"type"] isEqualToString:@"Catalog"]) {
-        title = [[NSString stringWithFormat:@"%@",result[@"menu1"]]stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
-    }
-    if ([result[@"type"] isEqualToString:@"Special"]) {
-        title = [NSString stringWithFormat:@"%@",result[@"description"]];
-    }
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
     
+    NSDictionary *result = searchResultArray[indexPath.section][@"detail"][indexPath.row];
+    
+    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:searchResultArray[indexPath.section][@"type"] message:[self getTitle:result :indexPath] delegate:self cancelButtonTitle:nil otherButtonTitles:@"ok", nil];
+    [alert show];
+}
+- (NSString*)getTitle:(NSDictionary*)result :(NSIndexPath *)indexPath{
+    NSString *title;
+    if ([searchResultArray[indexPath.section][@"type"] isEqualToString:@"Catalog"]) {
+        title = [result[@"menu1"] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+    }
+    if ([searchResultArray[indexPath.section][@"type"] isEqualToString:@"Special"]) {
+        title = [result[@"description"] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+    }
+    if ([searchResultArray[indexPath.section][@"type"] isEqualToString:@"Intro"]) {
+        title = [result[@"description"] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+    }
     return title;
+}
+- (void)highlight{
+    
 }
 @end
