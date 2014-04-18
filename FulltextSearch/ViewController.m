@@ -60,12 +60,12 @@
             
             if (titleResultsRange.length > 0){
                 
-                NSRange substringRange = NSMakeRange(titleResultsRange.location - 10, 20);
+//                NSRange substringRange = NSMakeRange(titleResultsRange.location - 10, 20);
 //                NSLog(@"%@",item[@"menu1"]);
 //                NSLog(@"module %@ found %@",moduleName,item);
 //                NSLog(@"module %@ ",moduleName);
-                NSString *string = [contentString substringWithRange:substringRange];
-                NSLog(@"found %@",string);
+//                NSString *string = [contentString substringWithRange:substringRange];
+//                NSLog(@"found %@",string);
                 
                 [result addObject:item];
                 count++;

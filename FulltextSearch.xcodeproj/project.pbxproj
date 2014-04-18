@@ -423,6 +423,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FulltextSearch/FulltextSearch-Prefix.pch";
 				INFOPLIST_FILE = "FulltextSearch/FulltextSearch-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -436,6 +437,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FulltextSearch/FulltextSearch-Prefix.pch";
 				INFOPLIST_FILE = "FulltextSearch/FulltextSearch-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -500,6 +502,7 @@
 				464A3F4918ED62E200707F0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		464A3F4A18ED62E200707F0A /* Build configuration list for PBXNativeTarget "FulltextSearchTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +511,7 @@
 				464A3F4C18ED62E200707F0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
